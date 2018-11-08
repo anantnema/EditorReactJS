@@ -118,7 +118,7 @@ class Editor extends Component {
     }
   }
 
-  _downloadTxtFile = () => {
+  downloadFile = () => {
    var element = document.createElement("a");
    var file = new Blob([document.getElementById('list').innerHTML ,this.state.html], {type: 'html'});
    element.href = URL.createObjectURL(file);
