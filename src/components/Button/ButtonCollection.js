@@ -11,7 +11,7 @@ const ButtonCollection = (props) => {
       <Button name="Undo" cmd="Undo" />
       <Button name="Redo" cmd="redo" />
       <button onClick={props.ModalClick}>Preview</button>
-      <button onClick={props.downloadFile}>Download</button>
+      <button onClick={props.DownloadClick}>Download</button>
       <input type="text" id="url" size="30" value={props.link} onChange={props.change} />
       <Button
         cmd="createLink"
